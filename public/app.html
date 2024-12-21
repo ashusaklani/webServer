@@ -14,7 +14,7 @@
                 <a href="#hero">APPLICATION</a>
             </h1>
             <div>
-                <button id="hamburger-button" class="text-3xl sm:hidden cursor-pointer focus:outline-none w-8 h-8 relative">
+                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer focus:outline-none w-8 h-8 relative">
                     <div class="w-8 h-1 bg-white rounded absolute transition-all duration-500 before:content-[''] before:w-8 before:h-1 before:bg-white before:rounded before:absolute before:-translate-y-3 before:right-0 after:content-[''] after:w-8 after:h-1 after:bg-white after:rounded after:absolute after:translate-y-3 after:right-0"></div>
                 </button>
                 <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
@@ -26,6 +26,36 @@
             </div> 
 
         </section>
+        <section
+        id="mobile-menu"
+        class="absolute top-68 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden"
+      >
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a
+            href="./index.html"
+            class="w-full text-center py-6 hover:opacity-90 hover:border-b hover:border-teal-700 hover:bg-teal-700 hover:bg-opacity-15"
+            >HOME</a
+          >
+          <a
+            href=""
+            class="w-full text-center py-6 hover:opacity-90 hover:border-b hover:border-teal-700 hover:bg-teal-700 hover:bg-opacity-15"
+            >APPLICATION</a
+          >
+          <a
+            href="./docs.html"
+            class="w-full text-center py-6 hover:opacity-90 hover:border-b hover:border-teal-700 hover:bg-teal-700 hover:bg-opacity-15"
+            >DOCS</a
+          >
+          <a
+            href="./info.html"
+            class="w-full text-center py-6 hover:opacity-90 hover:border-b hover:border-teal-700 hover:bg-teal-700 hover:bg-opacity-15"
+            >ABOUT US</a
+          >
+        </nav>
+      </section>
 
     </header>
     <main class="mb-8 max-w-4xl mx-auto">
@@ -37,10 +67,10 @@
             </div>
             <section id="buttons" class="pt-4 grid grid-cols-2">
 
-                <div class="max-w-4xl min-h-[30vh] border border-green-500 flex flex-col items-center">
-                <h1 class="mt-4 mb-8 font-extrabold text-center text-xl">LED Control</h1>
+                <div class="max-w-4xl min-h-[30vh] border border-green-500 flex flex-col items-center p-4">
+                <h1 class="mt-4 mb-4 font-extrabold text-center text-xl">LED Control</h1>
                 <!-- <img src="./images/incandescent-light-bulb-svgrepo-com.svg" alt=""> -->
-                <svg  fill="#000000" version="1.1" id="ledSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" height="200px" viewBox="0 0 493.761 493.762" xml:space="preserve" stroke="#000000">
+                <svg fill="#000000" version="1.1" id="ledSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" height="200px" viewBox="0 0 493.761 493.762" xml:space="preserve" stroke="#000000">
     
                     <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                     
@@ -62,7 +92,7 @@
                     <input type="color" id="color">
                 </section> -->
                 </div>
-                <div class="max-w-4xl min-h-[30vh] border border-green-500 flex flex-col items-center">
+                <div class="max-w-4xl min-h-[30vh] border border-green-500 flex flex-col items-center p-4">
                     <h1 class=" mt-4 mb-4 font-extrabold text-xl">CONTROL</h1>
                     <svg  fill="#000000" version="1.1" id="rgbSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" height="200px" viewBox="0 0 493.761 493.762" xml:space="preserve" stroke="#000000">
     

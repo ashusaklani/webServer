@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Server</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="./js/client.js" defer></script>
 </head>
 <body class="min-h-screen bg-slate-50 dark:bg-slate-800 dark:text-white">
     <header class="bg-red-500 text-white sticky top-0 z-10">
@@ -13,7 +14,7 @@
                 <a href="#hero">WEB SERVER</a>
             </h1>
             <div>
-                <button id="hamburger-button" class="text-3xl sm:hidden cursor-pointer focus:outline-none w-8 h-8 relative">
+                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer focus:outline-none w-8 h-8 relative">
                     <div class="w-8 h-1 bg-white rounded absolute transition-all duration-500 before:content-[''] before:w-8 before:h-1 before:bg-white before:rounded before:absolute before:-translate-y-3 before:right-0 after:content-[''] after:w-8 after:h-1 after:bg-white after:rounded after:absolute after:translate-y-3 after:right-0"></div>
                 </button>
                 <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
@@ -25,6 +26,36 @@
             </div>
 
         </section>
+        <section
+        id="mobile-menu"
+        class="absolute top-68 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden"
+      >
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a
+            href="#hero"
+            class="w-full text-center py-6 hover:opacity-90 hover:border-b hover:border-teal-700 hover:bg-teal-700 hover:bg-opacity-15"
+            >HOME</a
+          >
+          <a
+            href="./app.html"
+            class="w-full text-center py-6 hover:opacity-90 hover:border-b hover:border-teal-700 hover:bg-teal-700 hover:bg-opacity-15"
+            >APPLICATION</a
+          >
+          <a
+            href="./docs.html"
+            class="w-full text-center py-6 hover:opacity-90 hover:border-b hover:border-teal-700 hover:bg-teal-700 hover:bg-opacity-15"
+            >DOCS</a
+          >
+          <a
+            href="./info.html"
+            class="w-full text-center py-6 hover:opacity-90 hover:border-b hover:border-teal-700 hover:bg-teal-700 hover:bg-opacity-15"
+            >ABOUT US</a
+          >
+        </nav>
+      </section>
     </header>  
 </body>
 </html>

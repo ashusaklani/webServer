@@ -1,4 +1,3 @@
-// Here I will be writing the javascript code to animate our haemburger button icon. 
 
 const initApp = ()=>{
     const redDial = document.getElementById('redDial');
@@ -13,6 +12,8 @@ const initApp = ()=>{
     const hiddenRGBDiv=document.getElementById('hiddenRGBDiv');
     const ultrasonicBtn=document.getElementById('ultrasonicBtn');
     const ultrasonicDiv=document.getElementById('ultrasonicDiv');
+    const hamburgerBtn = document.getElementById('hamburger-button');
+    const mobileMenu = document.getElementById('mobile-menu');
     let rVal=0;
     let gVal=0;
     let bVal=0;
@@ -21,6 +22,14 @@ const initApp = ()=>{
     let ledState=0;
     let ultrasonicState=0;
     let response;
+    
+    const toggleMenu = () => {
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("flex");
+        hamburgerBtn.classList.toggle("toggle-btn");
+    }
+    
+    hamburgerBtn.addEventListener("click", toggleMenu);
     
     async function startFetchingData() {
         intervalId = setInterval(()=>{
